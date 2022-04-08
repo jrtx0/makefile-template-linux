@@ -11,7 +11,7 @@ typedef unsigned long uint32_t;
  * 1 + 2    + 4    + 2   + N * 2           + 2
  * ***************************************************************/
 #define NUMBER_OF_ONE_LINE      0x20
-#define MAX_BUFFER_OF_ONE_LINE  (NUMBER_OF_ONE_LINE * 2 + 11)
+#define MAX_BUFFER_OF_ONE_LINE  (NUMBER_OF_ONE_LINE * 2 + 11 + 1)
 
 typedef struct 
 {
