@@ -25,7 +25,7 @@ typedef enum
 {
     RES_OK = 0,             // 操作完成
     RES_BIN_FILE_NOT_EXIST, // bin文件不存在，包括输入路径可能不正确
-    RES_HEX_FILE_PATH_ERROR //目标文件路径可能输入有误
+    RES_HEX_FILE_PATH_ERROR // 目标文件路径可能输入有误
 } RESULT_STATUS;
 
 RESULT_STATUS BinFile2HexFile(char *src, char *dest);
