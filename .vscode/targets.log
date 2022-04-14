@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Apr 13 08:54:11 2022
+# Make data base, printed on Thu Apr 14 02:12:41 2022
 
 # Variables
 
@@ -24,8 +24,8 @@ VSCODE_AGENT_FOLDER = /home/jrtx/.vscode-server
 VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
-# makefile (from 'Makefile', line 25)
-CPPFLAGS := -I./src -MMD -MP -g
+# makefile (from 'Makefile', line 29)
+CPPFLAGS := -I./src -MMD -MP
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -40,26 +40,30 @@ SHELL = /bin/sh
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
 _ = /home/jrtx/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/node
-# makefile (from 'Makefile', line 19)
+# makefile (from 'Makefile', line 32)
+CFLAGS = -g
+# makefile (from 'Makefile', line 23)
 INC_DIRS := ./src
 # makefile (from 'build/./src/main.c.d', line 1)
 MAKEFILE_LIST :=  Makefile build/./src/bin2hex.c.d build/./src/main.c.d
 # 'override' directive
 GNUMAKEFLAGS := 
+# makefile (from 'Makefile', line 33)
+CXXFLAGS = -g
 # environment
 XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
-# makefile (from 'Makefile', line 12)
+# makefile (from 'Makefile', line 16)
 OBJS := ./build/./src/bin2hex.c.o ./build/./src/main.c.o
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
 VSCODE_CWD = /home/jrtx
 # environment
-SSH_CONNECTION = 192.168.96.1 15592 192.168.96.227 22
+SSH_CONNECTION = 192.168.96.1 53434 192.168.96.227 22
 # environment
 PATH = /home/jrtx/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
@@ -76,10 +80,10 @@ LS_COLORS =
 VSCODE_PIPE_LOGGING = true
 # environment
 PWD = /home/jrtx/workspace/bin2hex
-# makefile (from 'Makefile', line 21)
+# makefile (from 'Makefile', line 25)
 INC_FLAGS := -I./src
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-28e11118-a677-4714-bbc5-355b4fe42225.sock
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-798b8c2a-3833-4b1d-b786-043887bc1cbd.sock
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # makefile (from 'Makefile', line 4)
@@ -108,14 +112,16 @@ MAKELEVEL := 0
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
-# makefile (from 'Makefile', line 8)
+# makefile (from 'Makefile', line 12)
 SRCS := ./src/bin2hex.c ./src/main.c
 # environment
 SHLVL = 3
+# makefile (from 'Makefile', line 7)
+CC = gcc
 # makefile (from 'Makefile', line 3)
 BUILD_DIR := ./build
 # environment
-XDG_SESSION_ID = 23
+XDG_SESSION_ID = 53
 # environment
 USER = jrtx
 # makefile
@@ -124,8 +130,6 @@ USER = jrtx
 %D = $(patsubst %/,%,$(dir $%))
 # default
 MAKE_COMMAND := make
-# environment
-OLDPWD = /home/jrtx/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977
 # default
 .VARIABLES := 
 # automatic
@@ -135,7 +139,7 @@ MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_CLIENT = 192.168.96.1 15592 22
+SSH_CLIENT = 192.168.96.1 53434 22
 # environment
 MAIL = /var/mail/jrtx
 # automatic
@@ -146,18 +150,19 @@ BROWSER = /home/jrtx/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
+# makefile (from 'Makefile', line 8)
+CXX = g++
 # environment
 LC_ALL = C
 # automatic
 ^F = $(notdir $^)
-# makefile (from 'Makefile', line 16)
+# makefile (from 'Makefile', line 20)
 DEPS := ./build/./src/bin2hex.c.d ./build/./src/main.c.d
 # default
 SUFFIXES := 
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # default
- 
 .RECIPEPREFIX := 
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
@@ -166,7 +171,7 @@ LANG = C
 # environment
 VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # variable set hash-table stats:
-# Load=76/1024=7%, Rehash=0, Collisions=15/124=12%
+# Load=79/1024=8%, Rehash=0, Collisions=15/129=12%
 
 # Pattern-specific Variable Values
 
@@ -181,12 +186,12 @@ VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # Implicit Rules
 
 build/%.c.o: %.c
-#  recipe to execute (from 'Makefile', line 33):
+#  recipe to execute (from 'Makefile', line 41):
 	mkdir -p $(dir $@)
 	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
 
 build/%.cpp.o: %.cpp
-#  recipe to execute (from 'Makefile', line 38):
+#  recipe to execute (from 'Makefile', line 46):
 	mkdir -p $(dir $@)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
 
@@ -219,7 +224,7 @@ build/./src/main.c.o: src/main.c src/bin2hex.h
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-13 08:54:08.298589333
+#  Last modified 2022-04-14 02:12:32.298196268
 #  File has been updated.
 #  Successfully updated.
 
@@ -251,20 +256,20 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 43):
+#  recipe to execute (from 'Makefile', line 51):
 	rm -r $(BUILD_DIR)
 
 # Not a target:
 build/./src/bin2hex.c.d:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-13 08:53:34.606373736
+#  Last modified 2022-04-13 09:07:17.313483931
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 build/./src/main.c.d:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-13 08:53:34.630373887
+#  Last modified 2022-04-13 09:07:17.337484393
 #  File has been updated.
 #  Successfully updated.
 
@@ -272,13 +277,14 @@ build/bin2hex: build/./src/bin2hex.c.o build/./src/main.c.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 29):
+#  recipe to execute (from 'Makefile', line 37):
 	$(CC) $(OBJS) -o $@ $(LDFLAGS)
 
 # files hash-table stats:
 # Load=14/1024=1%, Rehash=0, Collisions=0/38=0%
 # VPATH Search Paths
 
+ 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
@@ -289,6 +295,6 @@ build/bin2hex: build/./src/bin2hex.c.o build/./src/main.c.o
 # strcache performance: lookups = 49 / hit rate = 38%
 # hash-table stats:
 # Load=30/8192=0%, Rehash=0, Collisions=1/49=2%
-# Finished Make data base on Wed Apr 13 08:54:11 2022
+# Finished Make data base on Thu Apr 14 02:12:41 2022
 
  
