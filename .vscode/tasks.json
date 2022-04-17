@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "Build all",
             "type": "shell",
             "command": "make",
             "args": [
@@ -24,7 +24,7 @@
             ]
         },
         {
-            "label": "clean",
+            "label": "Build clean",
             "type": "shell",
             "command": "make",
             "args": [
