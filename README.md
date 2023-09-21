@@ -1,2 +1,2 @@
-# bin2hex
-a simple tool for converting bin file to hex file.makefile is designed for linux or macos c and cpp project.
+# makefile-template-linux
+a makefile template is designed for linux or macos c and cpp project which converting bin file to hex file.
